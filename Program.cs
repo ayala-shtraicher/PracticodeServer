@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "MyAllowSpecificOrigins",
                       policy  =>
                       {
-                          policy.WithOrigins("https://practicodeclient-g08q.onrender.com/").AllowAnyHeader().AllowAnyMethod();
+                          policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod();
                       });
 });
 
